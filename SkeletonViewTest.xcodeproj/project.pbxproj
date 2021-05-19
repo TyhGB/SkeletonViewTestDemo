@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		4C52DC232653B23F009C4B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C52DC212653B23F009C4B16 /* Main.storyboard */; };
 		4C52DC252653B243009C4B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C52DC242653B243009C4B16 /* Assets.xcassets */; };
 		4C52DC282653B243009C4B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C52DC262653B243009C4B16 /* LaunchScreen.storyboard */; };
+		4C52DC352654AE8D009C4B16 /* TableViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C52DC342654AE8D009C4B16 /* TableViewTestViewController.swift */; };
+		4C52DC382654B4F8009C4B16 /* TableViewOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C52DC372654B4F8009C4B16 /* TableViewOneCell.swift */; };
+		4C52DC3B2654F128009C4B16 /* CollectionViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C52DC3A2654F128009C4B16 /* CollectionViewTestViewController.swift */; };
+		4C52DC3D2654F406009C4B16 /* CollectionOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C52DC3C2654F406009C4B16 /* CollectionOneCell.swift */; };
+		79C4BF60D578C62CD57E4A45 /* Pods_SkeletonViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A07149A16A67E6CB7C98664 /* Pods_SkeletonViewTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A07149A16A67E6CB7C98664 /* Pods_SkeletonViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkeletonViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C52DC182653B23F009C4B16 /* SkeletonViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C52DC1B2653B23F009C4B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C52DC1D2653B23F009C4B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		4C52DC242653B243009C4B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C52DC272653B243009C4B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C52DC292653B243009C4B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C52DC342654AE8D009C4B16 /* TableViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTestViewController.swift; sourceTree = "<group>"; };
+		4C52DC372654B4F8009C4B16 /* TableViewOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewOneCell.swift; sourceTree = "<group>"; };
+		4C52DC3A2654F128009C4B16 /* CollectionViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTestViewController.swift; sourceTree = "<group>"; };
+		4C52DC3C2654F406009C4B16 /* CollectionOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOneCell.swift; sourceTree = "<group>"; };
+		6729B8A8CAD538CFB3A17871 /* Pods-SkeletonViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonViewTest.debug.xcconfig"; path = "Target Support Files/Pods-SkeletonViewTest/Pods-SkeletonViewTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8E42E99EA21330EF1AA4F506 /* Pods-SkeletonViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonViewTest.release.xcconfig"; path = "Target Support Files/Pods-SkeletonViewTest/Pods-SkeletonViewTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C4BF60D578C62CD57E4A45 /* Pods_SkeletonViewTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38A205F787C3343362725E1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6729B8A8CAD538CFB3A17871 /* Pods-SkeletonViewTest.debug.xcconfig */,
+				8E42E99EA21330EF1AA4F506 /* Pods-SkeletonViewTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C26E729658B83D09017B444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A07149A16A67E6CB7C98664 /* Pods_SkeletonViewTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C52DC0F2653B23F009C4B16 = {
 			isa = PBXGroup;
 			children = (
 				4C52DC1A2653B23F009C4B16 /* SkeletonViewTest */,
 				4C52DC192653B23F009C4B16 /* Products */,
+				38A205F787C3343362725E1D /* Pods */,
+				4C26E729658B83D09017B444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,8 @@
 		4C52DC1A2653B23F009C4B16 /* SkeletonViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4C52DC392654F0D1009C4B16 /* CollectionViewTest */,
+				4C52DC362654B4DA009C4B16 /* TableViewTest */,
 				4C52DC1B2653B23F009C4B16 /* AppDelegate.swift */,
 				4C52DC1D2653B23F009C4B16 /* SceneDelegate.swift */,
 				4C52DC1F2653B23F009C4B16 /* ViewController.swift */,
@@ -67,6 +101,24 @@
 			path = SkeletonViewTest;
 			sourceTree = "<group>";
 		};
+		4C52DC362654B4DA009C4B16 /* TableViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				4C52DC342654AE8D009C4B16 /* TableViewTestViewController.swift */,
+				4C52DC372654B4F8009C4B16 /* TableViewOneCell.swift */,
+			);
+			path = TableViewTest;
+			sourceTree = "<group>";
+		};
+		4C52DC392654F0D1009C4B16 /* CollectionViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				4C52DC3A2654F128009C4B16 /* CollectionViewTestViewController.swift */,
+				4C52DC3C2654F406009C4B16 /* CollectionOneCell.swift */,
+			);
+			path = CollectionViewTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C52DC2C2653B243009C4B16 /* Build configuration list for PBXNativeTarget "SkeletonViewTest" */;
 			buildPhases = (
+				E7FD691B23E7CC09F0AB903D /* [CP] Check Pods Manifest.lock */,
 				4C52DC142653B23F009C4B16 /* Sources */,
 				4C52DC152653B23F009C4B16 /* Frameworks */,
 				4C52DC162653B23F009C4B16 /* Resources */,
+				992077DC6C62285A9CBC8106 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +186,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		992077DC6C62285A9CBC8106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkeletonViewTest/Pods-SkeletonViewTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkeletonViewTest/Pods-SkeletonViewTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkeletonViewTest/Pods-SkeletonViewTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FD691B23E7CC09F0AB903D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkeletonViewTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C52DC142653B23F009C4B16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +235,11 @@
 			files = (
 				4C52DC202653B23F009C4B16 /* ViewController.swift in Sources */,
 				4C52DC1C2653B23F009C4B16 /* AppDelegate.swift in Sources */,
+				4C52DC352654AE8D009C4B16 /* TableViewTestViewController.swift in Sources */,
 				4C52DC1E2653B23F009C4B16 /* SceneDelegate.swift in Sources */,
+				4C52DC3D2654F406009C4B16 /* CollectionOneCell.swift in Sources */,
+				4C52DC382654B4F8009C4B16 /* TableViewOneCell.swift in Sources */,
+				4C52DC3B2654F128009C4B16 /* CollectionViewTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +383,7 @@
 		};
 		4C52DC2D2653B243009C4B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6729B8A8CAD538CFB3A17871 /* Pods-SkeletonViewTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +402,7 @@
 		};
 		4C52DC2E2653B243009C4B16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E42E99EA21330EF1AA4F506 /* Pods-SkeletonViewTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
